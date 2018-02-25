@@ -1,0 +1,46 @@
+.staff {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 30px 15px 40px;
+  max-width: 1140px;
+  width: 100%;
+
+  .slide-images {
+    margin-bottom: 40px;
+
+    li {
+      display: block;
+      width: 100%;
+
+      img {
+        display: block;
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+
+  }
+
+  .slide-images-nav {
+    margin-right: -10px;
+    margin-left: -10px;
+
+    ul {
+      li {
+        display: block;
+        padding-right: 10px;
+        padding-left: 10px;
+
+        button {
+          display: block;
+          width: 100%;
+
+          img {
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

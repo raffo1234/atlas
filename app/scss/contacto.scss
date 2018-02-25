@@ -1,0 +1,88 @@
+.contact-wrapper {
+  background-color: color(blue);
+}
+
+.contact {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 100px;
+  padding-right: 15px;
+  padding-bottom: 100px;
+  padding-left: 15px;
+  max-width: 960px;
+  background-color: color(blue);
+  color: color(white);
+
+  article {
+    flex-basis: 50%;
+
+    &:first-child {
+      padding-right: 40px;
+      border-right: 1px solid color(dark-blue);
+
+      p {
+        margin-bottom: 40px;
+      }
+    }
+
+    &:last-child {
+      padding-left: 40px;
+
+      p {
+        margin-bottom: 25px;
+      }
+
+      div {
+        padding: 15px;
+        border-radius: 4px;
+        background-color: color(dark-blue);
+      }
+    }
+
+    .footer-form {
+      text-align: right;
+    }
+
+    .row {
+      margin-bottom: 10px;
+
+      input,
+      textarea {
+        padding: 5px 10px;
+        width: 100%;
+        border: 0;
+        border-radius: 4px;
+        background-color: color(dark-blue);
+        color: color(white);
+        font: inherit;
+        font-weight: 300;
+      }
+
+      textarea {
+        overflow: auto;
+        resize: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contact {
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    article {
+      &:first-child {
+        padding-right: 0;
+        border-right: 0;
+      }
+
+      &:last-child {
+        padding-top: 30px;
+        padding-left: 0;
+      }
+    }
+  }
+}

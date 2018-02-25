@@ -1,0 +1,30 @@
+.wrapper-three-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 60px 15px;
+
+
+  article {
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+  }
+
+  &.large-wrapper {
+    max-width: 1590px;
+    width: 100%;
+  }
+
+  &.small-wrapper {
+    max-width: 1185px;
+    width: 100%;
+  }
+}

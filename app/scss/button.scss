@@ -1,0 +1,16 @@
+.btn-orange {
+  padding: 6px 20px;
+  border-radius: 4px;
+  background-color: color(orange);
+  color: color(white);
+  font: inherit;
+  transition: background-color 3s;
+
+  &:hover {
+    background-color: darken(color(orange), 10%);
+  }
+
+  &:active {
+    background-color: lighten(color(orange), 10%);
+  }
+}

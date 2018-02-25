@@ -1,0 +1,35 @@
+{
+  "name": "Gulptest",
+  "description": "test sass build speed",
+  "version": "0.0.1",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browserify": "^15.2.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.2.0",
+    "gulp-embedlr": "^0.5.2",
+    "gulp-iconfont": "^9.0.2",
+    "gulp-iconfont-css": "^2.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^3.1.0",
+    "gulp-scss": "^1.4.0",
+    "gulp-uglify": "^3.0.0",
+    "tiny-lr": "^1.0.5",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "dependencies": {
+    "babelify": "^8.0.0",
+    "browserify": "^15.2.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "pump": "^2.0.1",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  }
+}

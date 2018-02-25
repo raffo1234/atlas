@@ -1,0 +1,13 @@
+.owl-carousel-video {
+  .item-video {
+    height: calc(100vh - 179px);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .owl-carousel-video {
+    .item-video {
+      height: calc(100vh - 150px);
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.wrapper-four-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 60px 15px;
+  max-width: 1510px;
+  width: 100%;
+
+  article {
+    margin-right: 15px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+  }
+}
