@@ -1,8 +1,9 @@
 require('../scss/app.scss');
 
 import $ from 'jquery';
-import { sliderOneFour } from './sliderOneFour';
+import { sliderOneFour } from './components/sliderOneFour';
 import { sliderVideo } from './components/slider-video/sliderVideo';
+import { formValidation } from './components/formValidation';
 
 const slider = () => {
   if (!$('.slider-opacity').length) return false;
@@ -156,4 +157,5 @@ document.addEventListener('DOMContentLoaded', () => {
   scrollingLoad();
   sliderOneFour();
   sliderVideo();
+  formValidation();
 });

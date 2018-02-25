@@ -63,6 +63,12 @@
         overflow: auto;
         resize: none;
       }
+
+      label.error {
+        display: block;
+        font-size: 13px;
+        padding-top: 5px;
+      }
     }
   }
 }

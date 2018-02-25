@@ -81,12 +81,22 @@
     <section class="contact">
       <article class="form">
         <p>Contactanos para recibir un presupuesto gratuito.</p>
-        <form action="">
+        <form action="" class="form-validate">
           <div class="row">
-            <input type="text" name="name" placeholder="Nombre*">
+            <input type="text"
+                   data-rule-required="true"
+                   data-msg-required="Este campo es obligatorio"
+                   name="name"
+                   placeholder="Nombre*">
           </div>
           <div class="row">
-            <input type="text" name="Email" placeholder="Email*">
+            <input type="email"
+                   name="Email"
+                   data-rule-required="true"
+                   data-msg-required="Este campo es obligatorio"
+                   data-rule-email="true"
+                   data-msg-email="Ingrese un Email valido"
+                   placeholder="Email*">
           </div>
           <div class="row">
             <input type="text" name="subject" placeholder="Asunto">
