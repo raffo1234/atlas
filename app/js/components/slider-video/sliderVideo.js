@@ -1,18 +1,25 @@
-require('./slider-video.scss');
-
 import owlCarousel from 'owl.carousel';
 
 export function sliderVideo() {
   const owl = $('.owl-carousel-video');
   owl.owlCarousel({
     items: 1,
+    loop: true,
     lazyLoad: true,
     nav: false,
     dots: false,
     autoplay: true,
-    autoplayTimeout: 3500,
+    autoplayTimeout: 10000,
     autoplayHoverPause: false,
     smartSpeed: 650,
+  });
+
+  $('.video-nav.nav-left').click(function() {
+    owl.trigger('prev.owl.carousel');
+  });
+
+  $('.video-nav.nav-right').click(function() {
+    owl.trigger('next.owl.carousel');
   });
 
   owl.on('translate.owl.carousel', (e) => {

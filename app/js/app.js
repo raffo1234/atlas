@@ -8,7 +8,7 @@ import { formValidation } from './components/formValidation';
 const slider = () => {
   if (!$('.slider-opacity').length) return false;
 
-  const DELAY_TRANSITION = 4000;
+  const DELAY_TRANSITION = 10000;
   const sliderContainer = $('.slider-opacity');
   const slides = sliderContainer.find('.slider li');
   const slidesNav = sliderContainer.find('.slider-nav li');
@@ -44,15 +44,15 @@ const slider = () => {
 
   for(var i = 0; i < next.length; i++) {
     next[i].addEventListener('click', function(event) {
-      // pauseSlideShow();
+      pauseSlideShow();
       nextSlide();
-      // restartSlideShow();
+      restartSlideShow();
     });
 
     prev[i].addEventListener('click', function(event) {
-      // pauseSlideShow();
+      pauseSlideShow();
       prevSlide();
-      // restartSlideShow();
+      restartSlideShow();
     });
   }
 

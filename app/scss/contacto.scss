@@ -66,8 +66,9 @@
 
       label.error {
         display: block;
-        font-size: 13px;
         padding-top: 5px;
+        color: color(error);
+        font-size: 13px;
       }
     }
   }

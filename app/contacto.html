@@ -86,6 +86,10 @@
             <input type="text"
                    data-rule-required="true"
                    data-msg-required="Este campo es obligatorio"
+                   data-rule-regex="^([^0-9]*)$"
+                   data-msg-regex="Números no estan permitidos"
+                   data-rule-minlength="2"
+                   data-msg-minlength="Minimo 2 caracteres"
                    name="name"
                    placeholder="Nombre*">
           </div>
@@ -95,7 +99,7 @@
                    data-rule-required="true"
                    data-msg-required="Este campo es obligatorio"
                    data-rule-email="true"
-                   data-msg-email="Ingrese un Email valido"
+                   data-msg-email="Ingrese un Email válido"
                    placeholder="Email*">
           </div>
           <div class="row">
