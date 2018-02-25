@@ -30,10 +30,10 @@ export function sliderVideo() {
   });
 
   $('.owl-item .item').each(function(i, node) {
-    const attr = $(node).data('videosrc');
-    if (typeof attr !== typeof undefined && attr !== false) {
-      const videosrc = $(this).attr('data-videosrc');
-      $(this).prepend('<video muted><source src="'+videosrc+'" type="video/mp4"></video>');
+    const videomp4 = $(node).data('videomp4');
+    const videowebm = $(node).data('videowebm');
+    if (typeof videomp4 !== typeof undefined && videomp4 !== false && typeof videowebm !== typeof undefined && videowebm !== false) {
+      $(node).prepend('<video muted><source src="'+videomp4+'" type="video/mp4"><source src="'+videowebm+'" type="video/webm" /></video>');
     }
   });
 
