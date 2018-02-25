@@ -9,9 +9,9 @@ export function sliderVideo() {
     lazyLoad: true,
     nav: false,
     dots: false,
-    autoplay: false,
+    autoplay: true,
     autoplayTimeout: 3500,
-    autoplayHoverPause: true,
+    autoplayHoverPause: false,
     smartSpeed: 650,
   });
 
