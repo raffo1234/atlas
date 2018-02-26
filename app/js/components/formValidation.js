@@ -10,5 +10,5 @@ export function formValidation() {
         return this.optional(element) || re.test(value);
     },
     'Please check your input.'
-);
+  );
 }
