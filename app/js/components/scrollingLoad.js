@@ -37,12 +37,13 @@ export function scrollingLoad() {
         const responseLength = response.length;
         let html = '';
         response.map(function(n, i) {
-          html += '<article><img src="'+ n.imageSrc +'" alt="'+ n.imageAlt +'"></article>';
+          html += '<article class="active"><img src="'+ n.imageSrc +'" alt="'+ n.imageAlt +'"></article>';
+          // wrapper.append('<article class="active"><img src="'+ n.imageSrc +'" alt="'+ n.imageAlt +'"></article>');
         });
         wrapper.append(html);
-        items = wrapper.find('article');
-        appear(total, items);
-        total = total + responseLength;
+        // items = wrapper.find('article');
+        // appear(total, items);
+        // total = total + responseLength;
       })
       .fail(function(data) {
         console.log(data);
