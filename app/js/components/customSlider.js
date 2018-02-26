@@ -25,34 +25,34 @@ export function customSlider() {
     goToSlide(currentSlide - 1);
   }
 
-  let slideInterval = setInterval(nextSlide, DELAY_TRANSITION);
+  // let slideInterval = setInterval(nextSlide, DELAY_TRANSITION);
 
   const pauseSlideShow = () => {
-    clearInterval(slideInterval);
+    // clearInterval(slideInterval);
   }
 
   const restartSlideShow = () => {
-    slideInterval = setInterval(nextSlide, DELAY_TRANSITION);
+    // slideInterval = setInterval(nextSlide, DELAY_TRANSITION);
   }
 
   for(var i = 0; i < next.length; i++) {
     next[i].addEventListener('click', function(event) {
-      pauseSlideShow();
+      // pauseSlideShow();
       nextSlide();
-      restartSlideShow();
+      // restartSlideShow();
     });
 
     prev[i].addEventListener('click', function(event) {
-      pauseSlideShow();
+      // pauseSlideShow();
       prevSlide();
-      restartSlideShow();
+      // restartSlideShow();
     });
   }
 
   slidesNav.on('click', function(event) {
     const idx = $(event.currentTarget).index();
-    pauseSlideShow();
+    // pauseSlideShow();
     goToSlide(idx);
-    restartSlideShow();
+    // restartSlideShow();
   });
 }

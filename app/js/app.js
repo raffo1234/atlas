@@ -6,6 +6,7 @@ import { sliderVideo } from './components/slider-video/sliderVideo';
 import { formValidation } from './components/formValidation';
 import { scrollingLoad } from './components/scrollingLoad';
 import { responsiveMenu } from './components/responsiveMenu';
+import { asociacionesSlider } from './components/asociacionesSlider';
 
 document.addEventListener('DOMContentLoaded', () => {
   customSlider();
@@ -16,4 +17,5 @@ document.addEventListener('DOMContentLoaded', () => {
   formValidation();
   scrollingLoad();
   responsiveMenu();
+  asociacionesSlider();
 });

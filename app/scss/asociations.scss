@@ -5,12 +5,49 @@
   padding: 60px 15px;
   max-width: 1120px;
   width: 100%;
+
+  .owl-dots {
+    text-align: center;
+    padding-top: 60px;
+
+    .owl-dot {
+      display: inline-block;
+      padding: 6px;
+      opacity: 1;
+      transition: opacity .3s;
+
+      &::before {
+        display: block;
+        width: 8px;
+        height: 8px;
+        border-radius: 4px;
+        background-color: color(orange);
+        content: "";
+      }
+
+      &:hover {
+        opacity: .5;
+      }
+
+      &.active {
+        opacity: .5;
+      }
+    }
+  }
 }
 
 .asociations-slider {
-  margin-bottom: 60px;
   padding-right: 30px;
   padding-left: 30px;
+
+  .owl-item {
+    li {
+      img {
+        width: auto;
+        display: inline-block;
+      }
+    }
+  }
 
   li {
     margin-right: auto;
